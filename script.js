@@ -14,6 +14,10 @@ if (arrowchange.textContent === "▶") {
 };
 let AllCategories=clickedHeader.closest('.category');
 let CategoryTasks=AllCategories.querySelector('.tasks');
+let CategoryForm = AllCategories.querySelector('.newTask');
+CategoryTasks.classList.toggle('hidden');
+CategoryForm.classList.toggle('hidden');
+
 };
 
 CategoryHeader.forEach(function(header) {

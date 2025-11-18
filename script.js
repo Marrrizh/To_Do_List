@@ -1,5 +1,5 @@
 let CategoryHeader=document.querySelectorAll('.category-header.clickable');
-
+let TaskForms=document.querySelectorAll('.newTask');
 
 function findCategory(event) {
     const clickedHeader = event.currentTarget; 
@@ -23,3 +23,16 @@ CategoryForm.classList.toggle('hidden');
 CategoryHeader.forEach(function(header) {
     header.addEventListener('click', findCategory);
 });
+
+TaskForms.forEach(function(form) {
+    form.addEventListener('submit',AddNewTask);
+});
+
+function AddNewTask(event) {
+    event.preventDefault();
+  let ClickedForm=event.currentTarget;
+  let AllCategories = ClickedForm.closest('.category');
+  let InputForm=AllCategories.querySelector('input');
+  let TasksToDo=AllCategories.querySelector('.task-list');
+  let Counter=AllCategories.querySelector('.task-count');
+}

@@ -49,3 +49,15 @@ InputForm.value = "";
   Counter.textContent = currentCount;
 };
 };
+
+let ClickedIcon=document.querySelectorAll('.delete-btn');
+
+ClickedIcon.forEach(function(button){
+    button.addEventListener('click',DeleteTask)
+
+});
+function DeleteTask(event) {
+   
+  
+
+}

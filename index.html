@@ -24,9 +24,18 @@
 
     <div class="tasks hidden">  <!-- Этот блок будет появляться/скрываться -->
         <ul class="task-list">
-            <li>Сделать отчет</li>
-            <li>Написать письмо</li>
-            <li>Подготовить презентацию</li>
+            <li>
+                <span>Сделать отчет</span>
+            <button class="delete-btn">🗑️</button>
+            </li>
+            <li>
+            <span>Написать письмо</span>
+        <button class="delete-btn">🗑️</button>
+        </li>
+            <li>
+            <span>Подготовить презентацию</span>
+            <button class="delete-btn">🗑️</button>
+            </li>
         </ul>
     </div>
   
@@ -36,7 +45,7 @@
         <span class="category-name">Дом</span>
         <span class="arrow">▶</span>
     </span>
-         <span class="task-count">3</span>
+         <span class="task-count">1</span>
 
           <form class="newTask hidden">
     <input type="text" maxlength="100" placeholder="Добавьте новую задачу">
@@ -45,9 +54,11 @@
 
           <div class="tasks hidden">  <!-- Этот блок будет появляться/скрываться -->
         <ul class="task-list">
-            <li>Сделать отчет</li>
-            <li>Написать письмо</li>
-            <li>Подготовить презентацию</li>
+            <li>
+            <span>Полежать</span>
+            <button class="delete-btn">🗑️</button>
+            </li>
+        
         </ul>
     </div>
     <div class="category" id="mine">
@@ -56,7 +67,7 @@
         <span class="category-name">Мое</span>
         <span class="arrow">▶</span>
     </span>
-    <span class="task-count">3</span>
+    <span class="task-count">1</span>
      <form class="newTask hidden">
     <input type="text" maxlength="100" placeholder="Добавьте новую задачу">
     <button type="submit">Добавить</button>
@@ -64,9 +75,11 @@
 
           <div class="tasks hidden">  <!-- Этот блок будет появляться/скрываться -->
         <ul class="task-list">
-            <li>Сделать отчет</li>
-            <li>Написать письмо</li>
-            <li>Подготовить презентацию</li>
+            <li>
+            <span>Доделать проект</span>
+            <button class="delete-btn">🗑️</button>
+            </li>
+
         </ul>
     </div>
 <script src="script.js"></script> 

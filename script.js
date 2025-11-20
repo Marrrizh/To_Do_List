@@ -28,11 +28,24 @@ TaskForms.forEach(function(form) {
     form.addEventListener('submit',AddNewTask);
 });
 
+
 function AddNewTask(event) {
     event.preventDefault();
   let ClickedForm=event.currentTarget;
   let AllCategories = ClickedForm.closest('.category');
-  let InputForm=AllCategories.querySelector('input');
+  let InputForm=AllCategories.querySelector(' input');
   let TasksToDo=AllCategories.querySelector('.task-list');
   let Counter=AllCategories.querySelector('.task-count');
-}
+
+  let taskText = InputForm.value;
+  if (taskText.trim() !== '') {
+  let newTask=document.createElement('li');
+  newTask.textContent=taskText;
+  TasksToDo.append(newTask);
+InputForm.value = "";
+
+  let currentCount = parseInt(Counter.textContent);
+  currentCount += 1;
+  Counter.textContent = currentCount;
+};
+};

@@ -56,8 +56,13 @@ ClickedIcon.forEach(function(button){
     button.addEventListener('click',DeleteTask)
 
 });
+
 function DeleteTask(event) {
+ const clickedIcon = event.currentTarget; 
+ let DeletedTask=clickedIcon.closest('li');
+ DeletedTask.remove();
+ 
    
   
 
-}
+};

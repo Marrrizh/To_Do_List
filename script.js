@@ -60,9 +60,9 @@ ClickedIcon.forEach(function(button){
 function DeleteTask(event) {
  const clickedIcon = event.currentTarget; 
  let DeletedTask=clickedIcon.closest('li');
+ let AllCategories = clickedIcon.closest('.category');
+ let TaskCounter=AllCategories.querySelector('.task-count');
  DeletedTask.remove();
- 
-   
-  
-
+let currentCount = Number(TaskCounter.textContent);
+TaskCounter.textContent = currentCount - 1;
 };

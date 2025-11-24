@@ -40,8 +40,17 @@ function AddNewTask(event) {
   let taskText = InputForm.value;
   if (taskText.trim() !== '') {
   let newTask=document.createElement('li');
-  newTask.textContent=taskText;
+  let newSpan=document.createElement('span');
+  let newIcon=document.createElement('button');
+  newIcon.classList.add('.delete-btn');
+newSpan.textContent=taskText;
+newIcon.textContent="🗑️";
+newIcon.addEventListener('click', DeleteTask); 
+newTask.appendChild(newSpan);
+newTask.appendChild(newIcon);
   TasksToDo.append(newTask);
+  
+
 InputForm.value = "";
 
   let currentCount = parseInt(Counter.textContent);

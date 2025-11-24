@@ -66,3 +66,28 @@ function DeleteTask(event) {
 let currentCount = Number(TaskCounter.textContent);
 TaskCounter.textContent = currentCount - 1;
 };
+
+let AllTasks=document.querySelectorAll('li');
+AllTasks.forEach(function(task) {
+    task.addEventListener('dblclick', RedactingTask);
+});
+
+function RedactingTask(event){
+
+    let ClickedTask=event.currentTarget;
+    const TaskElement=ClickedTask.querySelector('span').textContent;
+    const deleteBtn = ClickedTask.querySelector('.delete-btn');
+
+    const input=document.createElement('input');
+    input.type="text";
+    input.value=TaskElement;
+
+    TaskElement.innerHTML="";
+     TaskElement.appendChild(input);
+     TaskElement.appendChild(deleteBtn);
+
+      input.focus();
+    input.select();
+
+
+}

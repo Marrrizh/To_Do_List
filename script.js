@@ -94,14 +94,28 @@ function RedactingTask(event){
      input.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
     saveEdit();
-    }
+    };
 
+if (e.key === 'Escape') {
+    cancelEdit();  // функция отмены
+};
 
     });
 
     function saveEdit(){
+let newText=input.value;
+TaskElement.textContent = newText;
 
-    }
+input.replaceWith(TaskElement);
+ClickedTask.appendChild(deleteBtn); 
+    };
+
+  function cancelEdit() {
+
+
+input.replaceWith(taskText);
+ClickedTask.appendChild(deleteBtn); 
+  }  
     };
 
    

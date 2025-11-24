@@ -82,7 +82,7 @@ function RedactingTask(event){
 
     const input=document.createElement('input');
     input.type="text";
-    input.value=TaskElement;
+    input.value=taskText;
 
     TaskElement.innerHTML="";
      TaskElement.appendChild(input);

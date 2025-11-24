@@ -75,8 +75,10 @@ AllTasks.forEach(function(task) {
 function RedactingTask(event){
 
     let ClickedTask=event.currentTarget;
-    const TaskElement=ClickedTask.querySelector('span').textContent;
+    const TaskElement=ClickedTask.querySelector('span');
     const deleteBtn = ClickedTask.querySelector('.delete-btn');
+
+    const taskText = TaskElement.textContent;  // сохраняем текст отдельно
 
     const input=document.createElement('input');
     input.type="text";
@@ -86,8 +88,20 @@ function RedactingTask(event){
      TaskElement.appendChild(input);
      TaskElement.appendChild(deleteBtn);
 
-      input.focus();
+    input.focus();
     input.select();
 
+     input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+    saveEdit();
+    }
 
-}
+
+    });
+
+    function saveEdit(){
+
+    }
+    };
+
+   

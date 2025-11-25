@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 let CategoryHeader=document.querySelectorAll('.category-header.clickable');
 let TaskForms=document.querySelectorAll('.newTask');
 
@@ -126,5 +128,4 @@ input.replaceWith(taskText);
 ClickedTask.appendChild(deleteBtn); 
   }  
     };
-
-   
+}); 

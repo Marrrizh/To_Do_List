@@ -12,5 +12,7 @@ body {
     padding: 12px 8px;
     background-color: #e8f0e6;
     margin: 4px;
+    border-radius: 8px;
+   cursor: pointer; 
 }
 

@@ -24,3 +24,9 @@ body {
     background-color: #d0e0d0;
     transform: scale(1.02);
 }
+.arrow {
+    font-size: 16px;
+    color: #5a7a5c;
+    font-weight: bold;
+    margin-left: 10px;
+}

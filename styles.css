@@ -55,6 +55,7 @@ body {
 }
 
 li {
+    box-sizing: border-box;
     padding: 2px 12px ;
     display: flex;
     justify-content:space-between;

@@ -63,9 +63,13 @@ li {
     display: flex;
     justify-content:space-between;
     width: 300px;
-   
+    transition: all 0.2s ease;
 }
 
+li:hover {
+background-color: #eef5ee;
+
+}
 .task-list {
     padding: 4px;
 }

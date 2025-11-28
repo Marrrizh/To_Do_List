@@ -48,10 +48,11 @@ body {
 }
 
 .tasks {
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     margin-top: 4px;
     margin-bottom: 4px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
  background: #f8faf8; 
  border-radius: 6px;
  border:  1px solid #e8f0e6;
@@ -59,7 +60,7 @@ body {
 
 li {
     box-sizing: border-box;
-    padding: 2px 12px ;
+    padding: 2px 0 12px 2px ;
     display: flex;
     justify-content:space-between;
     width: 300px;
@@ -71,5 +72,17 @@ background-color: #eef5ee;
 
 }
 .task-list {
-    padding: 4px;
+    padding: 4px 0;
+}
+
+.delete-btn {
+    display: inline-flex;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #d6e2d7;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid  #b0bbb1;
+    padding: 1px;
 }

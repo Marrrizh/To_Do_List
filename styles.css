@@ -14,7 +14,7 @@ body {
     justify-content: space-between; /* растянуть между элементами */
     align-items: center;           /* выровнять по вертикали */
     width: 100%;       
-    max-width: 250px;
+    max-width: 300px;
     padding: 12px 8px;
     background-color: #e8f0e6;
     margin: 4px;
@@ -51,6 +51,7 @@ body {
     padding: 10px;
     margin-top: 4px;
     margin-bottom: 4px;
+    width: 300px;
 }
 
 li {
@@ -58,4 +59,8 @@ li {
     display: flex;
     justify-content:space-between;
     width: 300px;
+}
+
+.task-list {
+    padding: 4px;
 }

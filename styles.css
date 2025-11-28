@@ -52,6 +52,9 @@ body {
     margin-top: 4px;
     margin-bottom: 4px;
     width: 300px;
+ background: #f8faf8; 
+ border-radius: 6px;
+ border:  1px solid #e8f0e6;
 }
 
 li {
@@ -60,6 +63,7 @@ li {
     display: flex;
     justify-content:space-between;
     width: 300px;
+   
 }
 
 .task-list {

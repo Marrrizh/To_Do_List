@@ -9,8 +9,10 @@ body {
 
 .category-header {
   
-    display: inline-block;
-     width: 80%; /* от ширины категории */
+    display: flex;
+    justify-content: space-between; /* растянуть между элементами */
+    align-items: center;           /* выровнять по вертикали */
+    width: 100%;       
     max-width: 250px;
     padding: 12px 8px;
     background-color: #e8f0e6;
@@ -29,4 +31,22 @@ body {
     color: #5a7a5c;
     font-weight: bold;
     margin-left: 10px;
+}
+
+.task-count {
+    background: #9fc2a7;       /* зелёный фон */
+    color: white;              /* белый текст */
+    border-radius: 50%;        /* превращает в круг */
+    width: 24px;               /* диаметр */
+    height: 24px;              /* диаметр */
+    display:inline-flex;           /* центрирование */
+    align-items: center;       /* вертикаль */
+    justify-content:center;  /* горизонталь */
+    font-size: 12px;           /* размер текста */
+    font-weight: bold;         /* жирный текст */
+}
+
+.tasks {
+    padding: 10px;
+    margin-top: 4px;
 }

@@ -47,6 +47,7 @@ function AddNewTask(event) {
 newSpan.textContent=taskText;
 newIcon.textContent="🗑️";
 newIcon.addEventListener('click', DeleteTask); 
+newTask.addEventListener('dblclick', RedactingTask);
 newTask.appendChild(newSpan);
 newTask.appendChild(newIcon);
   TasksToDo.append(newTask);

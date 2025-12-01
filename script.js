@@ -43,7 +43,7 @@ function AddNewTask(event) {
   let newTask=document.createElement('li');
   let newSpan=document.createElement('span');
   let newIcon=document.createElement('button');
-  newIcon.classList.add('.delete-btn');
+  newIcon.classList.add('delete-btn');
 newSpan.textContent=taskText;
 newIcon.textContent="🗑️";
 newIcon.addEventListener('click', DeleteTask); 

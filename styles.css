@@ -48,6 +48,7 @@ body {
 }
 
 .tasks {
+    display:flexbox;
     padding: 10px 0 10px 10px;
     margin-top: 4px;
     margin-bottom: 4px;

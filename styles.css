@@ -87,3 +87,10 @@ background-color: #eef5ee;
     border: 0.5px solid  #b0bbb1;
     padding: 1px;
 }
+
+.category-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+     fill: currentColor;
+}

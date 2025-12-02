@@ -59,6 +59,7 @@ body {
  background: #f8faf8; 
  border-radius: 6px;
  border:  1px solid #e8f0e6;
+ margin: 4px;
 }
 
 li {
@@ -105,4 +106,18 @@ input[type="text"] {
     flex: 1; /* растягивается */
     min-width: 0;
     font-size: 14px;
+
+}
+
+button[type="submit"] {
+    background-color: #9fc2a7;
+    border:1px solid #8ab095;
+    color:#ffffff;
+    height: 30px ;
+    border-radius: 6px;
+    padding:0 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #8ab095;
 }

@@ -51,8 +51,8 @@ body {
 
 .tasks {
     display:flexbox;
-    padding: 10px 0 10px 10px;
-    margin: 4px;
+    padding: 9px;
+    margin: 4px 2px 4px 4px;
     width: 100%;
     max-width: 300px;
  background: #f8faf8; 

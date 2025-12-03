@@ -67,7 +67,9 @@ li {
     justify-content:space-between;
     width: 300px;
     transition: all 0.2s ease;
+     gap: 8px;
 }
+
 
 li:hover {
 background-color: #eef5ee;
@@ -87,7 +89,9 @@ background-color: #eef5ee;
     align-items: center;
     border: 0.5px solid  #b0bbb1;
     padding: 1px;
+    flex: none; /* кнопка не меняет размер */
 }
+
 
 .category-icon {
     width: 25px;
@@ -101,11 +105,14 @@ input[type="text"] {
     border: 1px solid #d0e0d0;
     border-radius: 6px;
     height: 30px;
-    flex: 1; /* растягивается */
     min-width: 0;
     font-size: 14px;
     margin: 4px;
     
+}
+
+li input[type="text"] {
+    margin-right: 95px;
 }
 
 button[type="submit"] {

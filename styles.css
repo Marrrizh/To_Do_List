@@ -146,3 +146,15 @@ button[type="submit"]:hover {
         padding: 0 4px !important; /* минимальные отступы по бокам */
     }
 }
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .category-header {
+    font-size:16px;  
+     padding: 14px 12px !important; /* меньше отступов */
+    margin: 4px 0 !important; 
+}
+}

@@ -5,7 +5,9 @@
 
 body {
     background-color: #f9fbf8;
-    width:50%;
+   width: 100%;
+    padding: 0 16px; /* отступы по бокам */
+    box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
